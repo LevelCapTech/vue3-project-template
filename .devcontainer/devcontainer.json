@@ -1,0 +1,17 @@
+{
+  "name": "Vue3",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "vue3-development",
+  "workspaceFolder": "/app",
+  //"postCreateCommand": "pip install -r requirements.txt",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+      ,
+      "extensions": ["ms-azuretools.vscode-docker"]
+    }
+  }
+}
