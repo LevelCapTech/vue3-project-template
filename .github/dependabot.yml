@@ -1,23 +1,11 @@
-# Dependabotの設定ファイル - Dockerおよびpip依存関係の自動更新
-# version: 2
-# updates:
-#   # Docker (本番環境)
-#   - package-ecosystem: "docker"
-#     directory: "/docker/prod" # Dockerfileが置かれているディレクトリのパス (本番環境)
-#     schedule:
-#       interval: "weekly"
-#     open-pull-requests-limit: 5
-
-#   # Docker (開発環境)
-#   - package-ecosystem: "docker"
-#     directory: "/docker/dev" # Dockerfileが置かれているディレクトリのパス (開発環境)
-#     schedule:
-#       interval: "weekly"
-#     open-pull-requests-limit: 5
-
-#   # pip (Python依存関係)
-#   - package-ecosystem: "pip"
-#     directory: "/src" # Pythonプロジェクトのディレクトリを指定
-#     schedule:
-#       interval: "weekly"
-#     open-pull-requests-limit: 5
+version: 2
+updates:
+  # npm (JavaScript/TypeScript) の依存関係を管理
+  - package-ecosystem: "npm" # 使用するパッケージ管理ツール
+    directory: "/"           # package.json が配置されているディレクトリ
+    schedule:
+      interval: "weekly"     # 更新頻度（daily, weekly, monthly から選択）
+    open-pull-requests-limit: 100 # 開いているPRの最大数
+    ignore:
+      - dependency-name: "vue" # 特定の依存関係の更新を無視（必要に応じて設定）
+        versions: ["3.x"]      # 無視するバージョン範囲を指定
