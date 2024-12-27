@@ -1,5 +1,9 @@
-# Vue 3 + TypeScript + Vite
+![GitHub last commit](https://img.shields.io/github/last-commit/LevelCapTech/vue3-project-template)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/LevelCapTech/vue3-project-template)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LevelCapTech/vue3-project-template)
+![GitHub Repo stars](https://img.shields.io/github/stars/LevelCapTech/vue3-project-template)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# vue3-project-template
+このテンプレートは、Vite を使用して Vue 3 と TypeScript を使った開発を始めるのに役立ちます。テンプレートでは Vue 3 の `<script setup>` SFCs（単一ファイルコンポーネント）を使用しています。詳細については、[script setup ドキュメント](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) をご覧ください。  
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+推奨されるプロジェクトのセットアップ方法や IDE のサポートについては、[Vue ドキュメント TypeScript ガイド](https://vuejs.org/guide/typescript/overview.html#project-setup) を参照してください。
